@@ -61,4 +61,15 @@ class IchigoTest {
 			assertThrows(IllegalArgumentException.class, () -> new Ichigo("たいしょうがい", "XL"));
 		}
 	}
+	@Nested
+	class 対象の品種と対象の重さを与えていちごを作り_文字列表現を取得出来ること {
+		@Test
+		void 品種あまおうと重さ1kgのいちごを作成し_文字列表現を取得出来ること() throws Exception {
+			// 準備
+			ichigo = new Ichigo("あまおう", 1);
+			// 実行、検証
+			assertEquals("あまおう: S", ichigo.getIchigoToString());
+		}
+	}
+
 }

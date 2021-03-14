@@ -7,6 +7,8 @@ public class Ichigo {
 
 	private String hinsyu;
 	private String size;
+	private double weight;
+
 	private List<String> hinsyuList = Arrays.asList("あまおう", "とちおとめ", "もういっこ");
 	private List<String> sizeList = Arrays.asList("S", "M", "L", "LL");
 
@@ -17,6 +19,11 @@ public class Ichigo {
 			return;
 		}
 			throw new IllegalArgumentException("品種またはサイズが対象外です");
+	}
+
+	public Ichigo(String hinsyu, double weight) {
+		this.hinsyu = hinsyu;
+		this.size = "S";
 	}
 
 	public String getHinsyu() {
