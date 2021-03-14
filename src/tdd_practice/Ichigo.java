@@ -23,7 +23,9 @@ public class Ichigo {
 
 	public Ichigo(String hinsyu, double weight) {
 		this.hinsyu = hinsyu;
-		this.size = "S";
+		if (weight >= 1 && weight < 10) {
+			this.size = "S";
+		}
 	}
 
 	public String getHinsyu() {
