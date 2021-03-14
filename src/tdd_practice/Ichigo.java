@@ -26,6 +26,15 @@ public class Ichigo {
 		if (weight >= 1 && weight < 10) {
 			this.size = "S";
 		}
+		if (weight >= 10 && weight < 20) {
+			this.size = "M";
+		}
+		if (weight >= 20 && weight < 25) {
+			this.size = "L";
+		}
+		if (weight >= 25) {
+			this.size = "LL";
+		}
 	}
 
 	public String getHinsyu() {
